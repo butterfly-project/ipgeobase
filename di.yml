@@ -1,0 +1,12 @@
+bfy.ipgeobase.cidr:   '%app.dir.root%/cidr_optim.txt'
+bfy.ipgeobase.cities: '%app.dir.root%/cities.txt'
+
+services:
+
+  bfy.ipgeobase.ipgeobaselibrary:
+    class:      '\IPGeoBase'
+    arguments:  ['%bfy.ipgeobase.cidr%', '%bfy.ipgeobase.cities%']
+
+  bfy.ipgeobase:
+    class:      'Butterfly\Component\IpGeobase\IpGeoBase'
+    arguments:  ['@bfy.ipgeobase.ipgeobaselibrary']
