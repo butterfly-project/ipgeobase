@@ -1,0 +1,26 @@
+{
+    "name": "butterfly/ipgeobase",
+    "type": "library",
+    "description": "Butterfly PHP. IP Geobase Component",
+    "keywords": ["IP", "ipgeobase"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Fakhertdinov",
+            "email": "marat.fakhertdinov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "hundredminds/ipgeobase": "1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Butterfly\\Component\\IpGeobase\\": "src/",
+            "Butterfly\\Component\\IpGeobase\\Tests\\": "tests/unit/"
+        }
+    }
+}
