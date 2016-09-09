@@ -24,7 +24,7 @@ class IpGeoBase
 
     /**
      * @param string $ip
-     * @return string|null
+     * @return IpGeoInfo
      */
     public function getInfo($ip)
     {
